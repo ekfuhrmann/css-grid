@@ -80,8 +80,6 @@
       <p>Buy the album on
         <a href="https://levithepoet.bandcamp.com/album/correspondence-a-fiction">BandCamp</a>
       </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae totam quia vel eveniet porro, rem ducimus quam incidunt,
-        dicta laborum quod earum tempore natus placeat neque aspernatur pariatur iusto quos.</p>
     </div>
     <p>I know my sweet seductress, and her name is Depression. I wrote best beneath that demon’s destructive oppression</p>
 
@@ -153,6 +151,53 @@
       font-style: italic;
       font-weight: 100;
       margin: 0;
+    }
+
+    .post {
+      display: grid;
+      max-width: 1000px;
+      margin: 200px auto;
+      grid-template-columns: 3fr 12fr 5fr;
+      grid-gap: 10px 50px;
+    }
+
+    .post>* {
+      grid-column: 2 / -2;
+    }
+
+    .post>figure {
+      margin: 0;
+      grid-column: 1 / -1;
+    }
+
+    figcaption {
+      font-size: 10px;
+    }
+
+    .post>blockquote {
+      grid-column: 1 / -1;
+      font-size: 60px;
+      font-style: italic;
+      text-align: center;
+      margin: 0;
+    }
+
+    .tip {
+      background: #fafafa;
+      padding: 10px;
+      grid-row: span 5;
+      align-self: start;
+    }
+
+    .tip-left {
+      grid-column: 1 / span 1;
+      text-align: right;
+      border-right: 2px solid var(--yellow);
+    }
+
+    .tip-right {
+      grid-column: span 1 / -1;
+      border-left: 2px solid var(--yellow);
     }
   </style>
 
